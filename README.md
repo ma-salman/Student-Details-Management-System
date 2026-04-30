@@ -1,70 +1,111 @@
-# Getting Started with Create React App
+# 🎓 Student Management System (React + JSON Server)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple **Student Management System** built using **React.js** and **JSON Server** that performs full **CRUD operations** (Create, Read, Update, Delete).  
+This project is created for learning and practicing **React, REST APIs, Routing, and State Management**.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+- View all students
+- Add a new student
+- View student details
+- Edit student details
+- Delete a student
+- Form validation
+- React Router navigation
+- JSON Server as mock backend
+- Clean and professional UI
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Tech Stack
 
-### `npm test`
+**Frontend**
+- React.js
+- React Router DOM
+- HTML
+- CSS
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Backend (Mock API)**
+- JSON Server
 
-### `npm run build`
+**Tools**
+- VS Code
+- npm / npx
+- Git & GitHub
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📂 Project Structure
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+src/  
+├── StudentTable.js  
+├── CreateStudent.js  
+├── EditStudent.js  
+├── ViewDetails.js  
+├── App.js  
+├── App.css  
+├── index.js  
+└── index.css  
 
-### `npm run eject`
+db.json
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## ⚙️ Installation & Run Project
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1️⃣ Clone Repository
 
-## Learn More
+git clone https://github.com/your-username/student-management-system.git
+cd student-management-system
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2️⃣ Install Dependencies
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+  npm install
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+  3️⃣ Start JSON Server (Important ❗)
 
-### Analyzing the Bundle Size
+  npx json-server@0.17.4 --watch db.json --port 8000 --id id
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+  Backend runs at:
+     
+     http://localhost:8000/students
 
-### Making a Progressive Web App
+4️⃣ Start React App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+   npm start 
 
-### Advanced Configuration
+Frontend runs at:
+        
+    http://localhost:3000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+📌 API Endpoints
 
-### `npm run build` fails to minify
+GET /students → Get all students
+GET /students/:id → Get student by ID
+POST /students → Add new student
+PUT /students/:id → Update student
+DELETE /students/:id → Delete student
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+What I Learned
+
+React Hooks (useState, useEffect)
+CRUD operations
+REST API integration
+React Router
+JSON Server usage
+Form handling and validation
+Debugging real-world React issues
+
+👨‍💻 Author:
+
+Mohammad Abdul Salman
+Mumbai, India
+Aspiring React Full‑Stack Developer
