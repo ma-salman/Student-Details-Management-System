@@ -1,0 +1,115 @@
+/* ========= View Details Page Professional CSS ========= */
+
+:root{
+  --bg: #f6f8fc;
+  --card: #ffffff;
+  --text: #0f172a;
+  --muted: #64748b;
+  --border: #e2e8f0;
+  --shadow: 0 12px 35px rgba(2, 6, 23, 0.08);
+
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+
+  --info-soft: rgba(37, 99, 235, 0.08);
+  --radius: 18px;
+}
+
+/* Page container */
+.container{
+  max-width: 900px;
+  margin: 32px auto;
+  padding: 0 16px;
+  color: var(--text);
+}
+
+/* Page title */
+.container h1{
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: -0.4px;
+  margin: 0 0 14px;
+}
+
+/* Details card */
+.details{
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 18px;
+  margin-top: 12px;
+}
+
+/* Each row */
+.details p{
+  margin: 0;
+  padding: 12px 10px;
+  border-radius: 14px;
+  background: var(--info-soft);
+  border: 1px solid rgba(37, 99, 235, 0.12);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+/* Label styling */
+.details strong{
+  min-width: 80px;
+  color: #0b1220;
+  font-weight: 900;
+  letter-spacing: 0.2px;
+}
+
+/* Back button (your class: btn btn-primary) */
+.btn.btn-primary{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 14px;
+  margin-top: 16px;
+  border-radius: 12px;
+  background: var(--primary);
+  color: #fff;
+  font-weight: 900;
+  font-size: 14px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.06s ease;
+  text-decoration: none;
+}
+
+.btn.btn-primary:hover{
+  background: var(--primary-hover);
+}
+
+.btn.btn-primary:active{
+  transform: translateY(1px);
+}
+
+/* Small screens */
+@media (max-width: 600px){
+  .container h1{
+    font-size: 22px;
+  }
+
+  .details{
+    padding: 14px;
+  }
+
+  .details p{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .details strong{
+    min-width: auto;
+  }
+
+  .btn.btn-primary{
+    width: 100%;
+  }
+}

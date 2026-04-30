@@ -1,0 +1,148 @@
+/* ========= Create Student Page Professional CSS ========= */
+
+:root{
+  --bg: #f6f8fc;
+  --card: #ffffff;
+  --text: #0f172a;
+  --muted: #64748b;
+  --border: #e2e8f0;
+  --shadow: 0 12px 35px rgba(2, 6, 23, 0.08);
+
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+
+  --ghost: #ffffff;
+  --ghost-hover: rgba(148, 163, 184, 0.18);
+
+  --danger: #ef4444;
+  --danger-soft: rgba(239, 68, 68, 0.12);
+  --danger-border: rgba(239, 68, 68, 0.25);
+
+  --radius: 18px;
+}
+
+.container{
+  max-width: 900px;
+  margin: 32px auto;
+  padding: 0 16px;
+  color: var(--text);
+}
+
+.container h2{
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -0.4px;
+  margin: 0 0 14px;
+}
+
+/* Card / form wrapper */
+.container form{
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 18px;
+}
+
+/* Make labels & inputs align nicely */
+.container form label{
+  display: block;
+  font-weight: 800;
+  font-size: 13px;
+  color: #334155;
+  margin: 12px 0 6px;
+}
+
+/* Inputs */
+.container form input{
+  width: 100%;
+  padding: 12px 12px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  outline: none;
+  background: #fff;
+  font-size: 14px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.container form input:focus{
+  border-color: rgba(37, 99, 235, 0.55);
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+}
+
+/* Validation error message */
+.errorMsg{
+  display: inline-block;
+  margin-top: 8px;
+  padding: 8px 10px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 700;
+
+  color: #b91c1c;
+  background: var(--danger-soft);
+  border: 1px solid var(--danger-border);
+}
+
+/* Buttons row */
+.container form .btn,
+.container form a.btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-weight: 900;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.06s ease, border-color 0.2s ease;
+  user-select: none;
+  text-decoration: none;
+  margin-top: 16px;
+  margin-right: 10px;
+}
+
+.container form .btn:active,
+.container form a.btn:active{
+  transform: translateY(1px);
+}
+
+/* Save button (your class: btn btn-save) */
+.btn-save{
+  background: var(--primary);
+  color: #fff;
+  border: 1px solid transparent;
+}
+
+.btn-save:hover{
+  background: var(--primary-hover);
+}
+
+/* Back link button (your class: btn btn-back) */
+.btn-back{
+  background: var(--ghost);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+.btn-back:hover{
+  background: var(--ghost-hover);
+}
+
+/* Optional: better spacing on small screens */
+@media (max-width: 600px){
+  .container h2{
+    font-size: 22px;
+  }
+
+  .container form{
+    padding: 14px;
+  }
+
+  .container form .btn,
+  .container form a.btn{
+    width: 100%;
+    margin-right: 0;
+  }
+}
